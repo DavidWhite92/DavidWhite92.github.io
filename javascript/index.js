@@ -1649,7 +1649,7 @@ function judging() {
         }
         judgingScreen();
     }
-     else if (currentCast.length <= 6 && lipsync_assassin) {
+    else if (currentCast.length <= 6 && lipsync_assassin) {
         //add 1 queen to the top and the rest to the btm
         currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
         topQueens.push(currentCast[0]);
@@ -2162,7 +2162,7 @@ function asLipSync() {
         top2[0].addToTrackRecord("WIN");
         screen.createImage(top2[0].image, "royalblue");
         screen.createBold(top2[0].getName() + ", you're a winner, baby!");
-        top2[1].addToTrackRecord("WIN");
+        top2[1].addToTrackRecord("TOP2");
         top2[1].favoritism += 4;
         screen.createImage(top2[1].image, "cyan");
         screen.createParagraph(top2[1].getName() + ", you are safe.");
@@ -2385,12 +2385,12 @@ let us_season4 = [alisa, chad, dida, jiggly, kenya, leshauwn, latrice, madame, m
 //ALL STARS 1:
 let allstars_1 = [alexis, chad, jujubee, latrice, manila, mimi, ninaf, pandora, raven, shannel, tammie, yara];
 //SEASON 5:
-let alaska = new Queen("Alaska", 8, 9, 7, 8, 9, 9, 9, "Alaska");
+let alaska = new Queen("Alaska", 10, 11, 7, 8, 9, 9, 11, "Alaska");
 let alyssa = new Queen("Alyssa Edwards", 5, 9, 12, 5, 9, 7, 9, "Alyssa");
 let coco = new Queen("Coco Montrese", 4, 9, 9, 8, 6, 9, 15, "Coco");
 let detox = new Queen("Detox", 8, 10, 6, 8, 3, 9, 9, "Detox");
 let honey = new Queen("Honey Mahogany", 3, 3, 3, 6, 2, 5, 3, "Honey");
-let ivy = new Queen("Ivy Winters", 10, 11, 12, 13, 14, 9, 10, "Ivy");
+let ivy = new Queen("Ivy Winters", 8, 8, 9, 9, 7, 9, 7, "Ivy");
 let jadejolie = new Queen("Jade Jolie", 6, 5, 6, 6, 6, 6, 9, "JadeJ");
 let jinkx = new Queen("Jinkx Monsoon", 11, 10, 8, 7, 10, 9, 9, "Jinkx");
 let lineysha = new Queen("Lineysha Sparx", 9, 6, 8, 10, 6, 9, 8, "Lineysha");
@@ -2421,7 +2421,7 @@ let ginger = new Queen("Ginger Minj", 12, 13, 8, 7, 13, 7, 12, "Ginger");
 let jaidynn = new Queen("Jaidynn Diore Fierce", 8, 9, 7, 6, 8, 7, 9, "Jaidynn");
 let jasmine = new Queen("Jasmine Masters", 3, 4, 6, 5, 2, 7, 7, "Jasmine");
 let kandy = new Queen("Kandy Ho", 4, 5, 7, 5, 4, 7, 9, "KandyH");
-let katya = new Queen("Katya", 11, 10, 9, 9, 9, 10, 9, "Katya");
+let katya = new Queen("Katya", 9, 9, 9, 7, 9, 9, 9, "Katya");
 let kennedy = new Queen("Kennedy Davenport", 9, 9, 8, 7, 9, 6, 11, "Kennedy");
 let max = new Queen("Max", 10, 4, 6, 8, 3, 8, 3, "Max");
 let fame = new Queen("Miss Fame", 4, 4, 5, 10, 3, 9, 4, "MissFame");
@@ -2662,12 +2662,12 @@ let maxi = new Queen("Maxi Shield", 6, 7, 7, 9, 7, 8, 9, "Maxi");
 let drdu = [anita, art, cocoj, elektra, etc, jojo, karen, kita, maxi];
 //DRAG RACE ESPAÑA
 let arantxa = new Queen("Arantxa Castilla La Mancha", 8, 8, 7, 7, 4, 9, 9, "Arantxa");
-let carmenf = new Queen("Carmen Farala", 12, 12, 11, 10, 10, 11, 12, "CarmenF");
+let carmenf = new Queen("Carmen Farala", 8, 7, 9, 9, 5, 11, 9, "CarmenF");
 let dovima = new Queen("Dovima Nurmi", 6, 5, 5, 4, 5, 8, 8, "Dovima");
 let drag = new Queen("Drag Vulcano", 6, 6, 5, 7, 7, 8, 6, "Drag");
 let hugaceo = new Queen("Hugáceo Crujiente", 7, 6, 7, 11, 6, 8, 9, "Hugaceo");
-let inti = new Queen("Inti", 7, 7, 7, 7, 7, 5, 7, "Inti");
-let killer = new Queen("Killer Queen", 10, 10, 9, 9, 9, 9, 10, "Killer");
+let inti = new Queen("Inti", 7, 7, 7, 7, 7, 12, 7, "Inti");
+let killer = new Queen("Killer Queen", 7, 8, 6, 7, 9, 9, 7, "Killer");
 let pupi = new Queen("Pupi Poisson", 8, 8, 8, 6, 9, 9, 9, "Puppy");
 let sagittaria = new Queen("Sagittaria", 7, 8, 9, 9, 8, 9, 8, "Sagittaria");
 let macarena = new Queen("The Macarena", 6, 7, 6, 5, 5, 7, 7, "Macarena");
@@ -2684,7 +2684,7 @@ let luquisha = new Queen("Luquisha Lubamba", 6, 6, 7, 8, 7, 8, 9, "Luquisha");
 let italia = [ava, divinity, elecktra, enorma, farida, ivana, riche, luquisha];
 //SPECIAL
 let pangina = new Queen("Pangina Heals", 10, 10, 9, 12, 9, 13, 11);
-let missfortune = new Queen("Miss Fortune", 15, 14, 15, 14, 15, 15, 15);
+let miss fortune = new Queen("Miss Fortune", 15, 14, 15, 15, 14, 15, 15);
 let international_as = [baga, blu, cheryl, janey, jimbo, jujubee, lemon, monique, pangina, missfortune];
 //all possible queens:
 let allCustomQueens = [];
@@ -2723,7 +2723,7 @@ let allQueens = [
     arantxa, carmenf, dovima, drag, hugaceo, inti, killer, pupi, sagittaria, macarena,
     adriana, beth, eve, giametric, icesis, kendall, kimoraA, oceane, pythia, stephanie, suki, synthia,
     ava, divinity, elecktra, enorma, farida, ivana, riche, luquisha,
-    pangina, missfortune,
+    pangina, miss fortune
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = false;
