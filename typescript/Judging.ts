@@ -479,7 +479,7 @@ function topAndBtm() {
 	;
 
 	
-	if (currentCast.length > 6) {
+	if (currentCast.length > 5) {
 		for (let i = 0; i < bottomQueens.length; i++)
 		screen.createImage(bottomQueens[i].image, "tomato");
 		screen.createBold("", "bottoms")
