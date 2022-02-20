@@ -1649,7 +1649,7 @@ function judging() {
         }
         judgingScreen();
     }
-     else if (currentCast.length <= 5 && lipsync_assassin) {
+     else if (currentCast.length <= 6 && lipsync_assassin) {
         //add 1 queen to the top and the rest to the btm
         currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
         topQueens.push(currentCast[0]);
@@ -1956,7 +1956,7 @@ function topAndBtm() {
         highs.innerHTML += "good work this week, you're safe.";
     screen.createHorizontalLine();
     ;
-    if (currentCast.length > 5) {
+    if (currentCast.length > 6) {
         for (let i = 0; i < bottomQueens.length; i++)
             screen.createImage(bottomQueens[i].image, "tomato");
         screen.createBold("", "bottoms");
