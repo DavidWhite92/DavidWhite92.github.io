@@ -73,7 +73,7 @@ function judging(): void {
 
 		judgingScreen();
 	}
-		else if (currentCast.length <= 6 && lipsync_assassin) {
+	else if (currentCast.length <= 6 && lipsync_assassin) {
 		//add 1 queen to the top and the rest to the btm
 		currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
 
@@ -743,7 +743,7 @@ function asLipSync() {
 		screen.createImage(top2[0].image, "royalblue");
 		screen.createBold(top2[0].getName() + ", you're a winner, baby!");
 
-		top2[1].addToTrackRecord("WIN");
+		top2[1].addToTrackRecord("TOP2");
 		top2[1].favoritism += 4;
 
 		screen.createImage(top2[1].image, "cyan");
