@@ -1181,7 +1181,7 @@ function contestantProgress() {
             if (placement.innerHTML == "WIN") {
                 placement.setAttribute("style", "font-weight: bold; background-color: royalblue; color: white;");
             }
-            else if (placement.innerHTML == "WIN") {
+            else if (placement.innerHTML == "TOP2") {
                 placement.setAttribute("style", "font-weight: bold; background-color: cyan;");
             }
             else if (placement.innerHTML == "LOW") {
