@@ -73,20 +73,6 @@ function judging(): void {
 
 		judgingScreen();
 	}
-	else if (currentCast.length <= 6 && lipsync_assassin) {
-		//add 1 queen to the top and the rest to the btm
-		currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
-
-		topQueens.push(currentCast[0]);
-
-		for (let i = 0; i < currentCast.length; i++) {
-			if (topQueens.indexOf(currentCast[i]) == -1) {
-				bottomQueens.push(currentCast[i]);
-			}
-		}
-
-		topAndBtm();
-	}
 	else if (currentCast.length == 6) {
 		currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
 		for (let i = 0; i < 3; i++) {
