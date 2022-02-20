@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="css/style.light.css">
+    <link rel="icon" href="image/favicon.ico">
+    <title>RuPaul's Drag Race Simulator</title>
+</head>
+<body>
+    <h1 id="MainTitle">RuPaul's Drag Race Simulator!</h1>
+    
+    <div id="MainBlock">
+        <p><big>Simulate a fictional Drag Race season and see what happens!</big></p>
+        <p>
+            How many queens do you want on your cast?
+            <br>
+            <input type="number" min="3" max="20" id="castSize">
+            <button onclick="generateSpace()">Select</button>
+        </p>
+        
+        <p id="castSelection"></p>
+
+        <p>Select your premiere format: </p>
+        <select id="premiere-format">
+            <option>Normal premiere</option>
+            <option value="s6-premiere">Double Premiere</option>
+            <option value="s12-premiere">Double Premiere (No Elimination)</option>
+            <option value="porkchop">Porkchop Premiere</option>
+        </select>
+
+        <p>Select your returning format: </p>
+        <select id="returning">
+            <option>None</option>
+            <option value="random">Random queen returns</option>
+            <option value="votes">Remaining queens vote</option>
+            <option value="smackdown">Lip-Sync Smackdown</option>
+        </select>
+            
+        <p>Select your finale format: </p>
+        <select id="format">
+            <option value="top3">Top 3 Format</option>
+            <option value="top4">Lip-Sync For The Crown</option>
+            <option value="team">Teams Format</option>
+            <option value="all-stars">Lip-Sync For Your Legacy</option>
+            <option value="lipsync-assassin">Lip-Sync Assassin Format</option>
+        </select>
+
+        <p><button onclick="startSimulation()">Simulate now!</button></p>
+        
+        <input type="checkbox" id="disableDouble"> Disable double shantays and sashays
+
+        <hr>
+
+        <big>More options!</big>
+
+        <div>
+            <p>
+            <big><a href="predef.html" id="inblock">Predefined casts</a></big>
+            </p>
+            <p>
+            <big><a href="custom.html" id="inblock">Custom</a></big>
+            </p>
+        </div>
+
+        <hr>
+
+        <big>Simulator's progress</big>
+        <div>
+            <p>
+            <big><a href="https://github.com/edssb/rupauls-drag-race-simulator/blob/main/CHANGELOG.md" id="inblock" target="_blank">Changelog</a></big>
+            </p>
+            <p>
+            <big><a href="https://github.com/edssb/rupauls-drag-race-simulator" target="_blank" id="inblock">GitHub page</a></big>
+            </p>
+            <p>
+                <big><a href="https://forms.gle/oLiR9E5xNKXt8zmPA" target="_blank" id="inblock">Suggest more lip-sync songs for the simulator!</a></big>
+            </p>
+            </p>
+            <p>
+                <big>Version number: 0.9.5</big>
+            </p>
+        </div>
+    </div>
+
+    <div style="text-align: center; font-weight: bold;">
+        <p><small>This simulator was created by edssb/JustALittleKiller</small></p>
+        <p><small>If you find any bugs or have feedback, you can talk to me on  <a href="https://www.reddit.com/user/JustALittleKiller" target="_blank">Reddit</a>!</small></p>
+    </div>
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+    kofiWidgetOverlay.draw('rupaulssimulator', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Tip Me',
+        'floating-chat.donateButton.background-color': '#5bc0de',
+        'floating-chat.donateButton.text-color': '#323842'
+    });
+    </script>
+</body>
+
+<script src="javascript/index.js"></script>
+
+</html>
