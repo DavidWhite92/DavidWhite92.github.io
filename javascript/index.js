@@ -2723,7 +2723,7 @@ let allQueens = [
     arantxa, carmenf, dovima, drag, hugaceo, inti, killer, pupi, sagittaria, macarena,
     adriana, beth, eve, giametric, icesis, kendall, kimoraA, oceane, pythia, stephanie, suki, synthia,
     ava, divinity, elecktra, enorma, farida, ivana, riche, luquisha,
-    pangina, miss fortune
+    pangina, miss fortune,
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = false;
