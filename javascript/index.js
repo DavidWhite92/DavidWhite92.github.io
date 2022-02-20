@@ -1649,6 +1649,30 @@ function judging() {
         }
         judgingScreen();
     }
+     else if (currentCast.length <= 5 && lipsync_assassin) {
+        //add 1 queen to the top and the rest to the btm
+        currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
+        topQueens.push(currentCast[0]);
+        for (let i = 0; i < currentCast.length; i++) {
+            if (topQueens.indexOf(currentCast[i]) == -1) {
+                bottomQueens.push(currentCast[i]);
+            }
+        }
+        topAndBtm();
+    }
+    else if (currentCast.length == 6) {
+        currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
+        for (let i = 0; i < 3; i++) {
+            topQueens.push(currentCast[i]);
+            bottomQueens.push(currentCast[currentCast.length - (i + 1)]);
+        }
+        if (top3 || top4)
+            winAndBtm2();
+        else if (all_stars)
+            top2AndBtm();
+        else if (lipsync_assassin)
+            topAndBtm();
+    }
     else if (currentCast.length == 5) {
         //add first 2 queens to the top and last 3 queens to the bottom:
         currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
