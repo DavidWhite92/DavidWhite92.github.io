@@ -2685,7 +2685,7 @@ let italia = [ava, divinity, elecktra, enorma, farida, ivana, riche, luquisha];
 //SPECIAL
 let pangina = new Queen("Pangina Heals", 10, 10, 9, 12, 9, 13, 11);
 let missfortune = new Queen("Miss Fortune", 15, 14, 15, 14, 15, 15, 15);
-let international_as = [baga, blu, cheryl, janey, jimbo, jujubee, lemon, monique, pangina];
+let international_as = [baga, blu, cheryl, janey, jimbo, jujubee, lemon, monique, pangina, missfortune];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
