@@ -2162,7 +2162,7 @@ function asLipSync() {
         top2[0].addToTrackRecord("WIN");
         screen.createImage(top2[0].image, "royalblue");
         screen.createBold(top2[0].getName() + ", you're a winner, baby!");
-        top2[1].addToTrackRecord("TOP2");
+        top2[1].addToTrackRecord("WIN");
         top2[1].favoritism += 4;
         screen.createImage(top2[1].image, "cyan");
         screen.createParagraph(top2[1].getName() + ", you are safe.");
