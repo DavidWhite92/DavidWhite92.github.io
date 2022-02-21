@@ -1649,7 +1649,7 @@ function judging() {
         }
         judgingScreen();
     }
-    else if (currentCast.length <= 4 && lipsync_assassin) {
+    else if (currentCast.length <= 5 && lipsync_assassin) {
         //add 1 queen to the top and the rest to the btm
         currentCast.sort((a, b) => (a.performanceScore - b.performanceScore));
         topQueens.push(currentCast[0]);
